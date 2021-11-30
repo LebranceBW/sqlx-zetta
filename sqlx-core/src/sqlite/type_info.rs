@@ -50,7 +50,8 @@ impl TypeInfo for SqliteTypeInfo {
             DataType::Text => "TEXT",
             DataType::Float => "REAL",
             DataType::Blob => "BLOB",
-            DataType::Int | DataType::Int64 => "INTEGER",
+            DataType::Int => "INTEGER",
+            DataType::Int64 => "BIGINT",
             DataType::Numeric => "NUMERIC",
 
             // non-standard extensions
